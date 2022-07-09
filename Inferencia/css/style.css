@@ -543,6 +543,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header1 h2 {
+  text-align: justify;
   font-size: 24px;
   color: #0c2e8a;
   font-weight: 700;
@@ -699,7 +700,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #services .box h4 {
-  margin-left: 100px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 22px;
@@ -711,10 +712,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box p {
   font-size: 18px;
-  margin-left: 100px;
+  margin-left: 20px;
   margin-bottom: 0;
   line-height: 24px;
-  
+  text-align: justify;
 }
 
 @media (max-width: 767px) {
