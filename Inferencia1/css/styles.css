@@ -26,6 +26,9 @@ h6 {
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
 }
+p {
+  text-align: justify;
+}
 
 a {
   color: #45aed6;
@@ -308,6 +311,7 @@ background: #343434;
   color: #fff;
   font-size: 44px;
   line-height: 1;
+  text-align: justify;
 }
 #cta2 h2 > span {
   color: #45aed6;
@@ -345,6 +349,7 @@ background: #343434;
   text-align: center;
   width: 106px; 
   color: #19BD9B;
+  text-align: justify;
   /* background:#fff; */
   /* box-shadow: inset 0 0 0 1px #d7d7d7; */
   /* -webkit-box-shadow: inset 0 0 0 1px #d7d7d7; */
@@ -443,7 +448,7 @@ color: #62BDF0;
   display:block;
   -webkit-box-shadow: 0 0 0 1px #fff;
   text-align: center;
-margin: 15px auto;
+  margin: 15px auto;
   background: rgba(255, 255, 255, 0.07);
   border-radius: 50%;
 }
@@ -591,6 +596,7 @@ background-color: #fff;
 -moz-transition: all 0.8s ease-in-out;
 -o-transition: all 0.8s ease-in-out;
 transition: all 0.8s ease-in-out;
+text-align: justify;
 }
 
 .team-wrapper > .team-inner > a:hover {
@@ -624,6 +630,7 @@ color: rgb(40, 141, 203);
 	font-size: 16px;
 	line-height: 30px;
 	margin: 10px 15px 10px 0;
+  text-align: justify;
 }
 .download-btn{
 	border: solid 3px #fff;
@@ -637,6 +644,7 @@ color: rgb(40, 141, 203);
 	padding: 15px 70px;
 	transition: all 0.5s ease;
 	webkit-border-radius: 3px;
+  text-align: justify;
 }
 .download-btn:hover, .download-btn:focus
 {
@@ -719,8 +727,8 @@ color: #fff !important;
 	font-size: 14px;
 
 	color: #D0D0D0;
-line-height: 22px;
-border-radius: 0px;
+  line-height: 22px;
+  border-radius: 0px;
 	border: 1px solid #8B8B8B;
 }
  
@@ -730,7 +738,7 @@ border-radius: 0px;
 	left:45px;
 	content:"";
 	border-top: 19px solid rgba(139, 139, 139, 1);
-border-right: 22px solid transparent;
+  border-right: 22px solid transparent;
 }
 .single-testimonial img{
 	border-radius:50%;
@@ -738,13 +746,15 @@ border-right: 22px solid transparent;
 .single-testimonial h5{
 	padding: 8px 0 0px;
 	font-size: 16px;
+  text-align: justify;
 }
 .features i {
   font-size: 35px;
+  text-align: justify;
 }
 .download-now .features p{
-padding:0px;
-margin: 15px 0;
+  padding:0px;
+  margin: 15px 0;
 }
  .features .media.service-box .pull-left > i{
 color: #62BDF0;
@@ -844,6 +854,7 @@ color: #62BDF0;
   margin-bottom: 30px;
   font-size: 17px;
   font-weight: normal;
+  text-align: justify;
 }
 .business-stats {
   display: inline-block;
