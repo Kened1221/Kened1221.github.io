@@ -6,8 +6,11 @@ Author URL: http://webthemez.com
 /*************************
 *******Typography******
 **************************/
+
+
+
 body {
-  padding-top: 100px;
+  padding-top:100px;
   background: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -50,6 +53,7 @@ hr {
   background-image: -webkit-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
+
 .section-header {
   margin-bottom: 50px;
 }
@@ -74,6 +78,8 @@ display: inline-block;
   height: 4px;
 }
 
+
+
 .btn {
   border-width: 0;
   border-radius: 0;
@@ -85,6 +91,7 @@ display: inline-block;
 .btn.btn-primary:focus {
   background: #429DD0;
 }
+
 .column-title {
   margin-top: 0;
   padding-bottom: 15px;
@@ -259,6 +266,7 @@ background: #343434;
   height: 100%;
   color: #000;
 }
+
 #hero-banner{
   background: #F7F7F7 url('../images/banner/bg1.png') no-repeat 92% bottom; 
   }
@@ -311,9 +319,12 @@ background: #343434;
   color: #000;
 }
 
+
 #features .media.service-box:first-child {
   margin-top: 80px;
 }
+
+
 #services {
   padding: 140px 0 75px;
 }
@@ -614,8 +625,7 @@ color: rgb(40, 141, 203);
 	line-height: 30px;
 	margin: 10px 15px 10px 0;
 }
-.download-btn
-{
+.download-btn{
 	border: solid 3px #fff;
 	border-radius: 3px;
 	color: #fff;
@@ -644,6 +654,26 @@ color: rgb(40, 141, 203);
 #about h2{
 color: #4F4F4F;
 }
+
+#teorema {
+  padding: 140px 0;
+  background: #E5E5E5;
+  color: #4F4F4F;
+}
+#teorema h2{
+color: #4F4F4F;
+}
+
+#proporcion {
+  padding: 140px 0;
+  background: #E5E5E5;
+  color: #4F4F4F;
+}
+#proporcion h2{
+color: #4F4F4F;
+}
+
+
 .download-now {
   position: relative;
   color: #fff;
@@ -668,7 +698,7 @@ color: #fff !important;
 }
 /*Team*/ 
 #team {
-  padding: 140px 0;
+  padding: 130px 0;
 }
  
 /*Testimonial Area*/
@@ -993,3 +1023,4 @@ margin: 9px auto;
 padding: 7px 0 0;
 }
 }
+

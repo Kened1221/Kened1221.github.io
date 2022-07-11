@@ -42,9 +42,10 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#INICIO">INICIO</a></li> 
-						<li class="scroll"><a href="#about">CONCEPTOS</a></li>
-                        <li class="scroll"><a href="#services">SPOBLACIÓN NORMAL</a></li>
-                        <li class="scroll"><a href="#about">TEOREMA DEL LIMITE CENTRAL</a></li>
+						<li class="scroll"><a href="#about">CONCEPTO</a></li>
+                        <li class="scroll"><a href="#products">MEDIA MUESTRAL</a></li>
+                        <li class="scroll"><a href="#teorema">TCL</a></li>
+                        <li class="scroll"><a href="#proporcion">PROPORCIÓN</a></li>
                         <li class="scroll"><a href="#portfolio">EJEMPLOS</a></li>
                         <li class="scroll"><a href="#team">EQUIPO</a></li>                     
                     </ul>
@@ -107,630 +108,357 @@
 </section><!--/#about-->
 
 <section class="download-now" id="products">
-        <div class="container">
-		 <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Our Product</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-			
-          <div class="row">
-            <div class="col-md-6 wp1 animated fadeInUp"> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-              <a href="#" class="download-btn">Download Now</a>
-            </div>
-			<div class="col-md-6">
-				  <div class="row">
-                <div class="features">
-                    <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-					 <div>
-                                <i class="fa fa-futbol-o"></i>
-                            </div>
-                        <div class="media service-box">
-                           
-                            <div class="media-body">
-                                <h4 class="media-heading">Mobile App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-					<div>
-                                <i class="fa fa-compass"></i>
-                            </div>
-                        <div class="media service-box">
-                            
-                            <div class="media-body">
-                                <h4 class="media-heading">Custom App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-					  <div>
-                                <i class="fa fa-database"></i>
-                            </div>
-                        <div class="media service-box">
-                          
-                            <div class="media-body">
-                                <h4 class="media-heading">E-Commerce</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+    <div class="container">
+		<div class="section-header">
+            <h2 class="section-title wow fadeInDown">Distribución de la Media Muestral cuando la población es normal</h2>
+            <p class="wow fadeInDown">Se extraen muestras aleatorias de tamaño n de una población infinita con media poblacional \(μ\) y varianza \(σ^2\) :</p>
                 
-                    <div class="col-md-6 fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-						<div>
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                        <div class="media service-box">                            
-                            <div class="media-body">
-                                <h4 class="media-heading">CMS App</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4--> 
-                </div>
-            </div><!--/.row-->  
-			</div>
-          </div>
         </div>
-      </section>
-	
-   <section id="services" >
-        <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Our Services</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+			
+        <div class="row">
+            <div class="col-md-6 wp1 animated fadeInUp"> 
+                <p>
+                    <ul>
+                        <li>La media de las medias muestrales es igual a la mediapoblacional. Es decir, \(μ_\bar{X}=μ\).</li>
+                        <li>La varianza de las medias muestrales es igual a la varianza
+                            poblacional dividida por . En consecuencia la desviación
+                            estándar de las medias muestrales (llamada también el <strong>error
+                            estándar</strong> de la media muestral), es igual a la deviación
+                            estándar poblacional dividida por la raíz cuadrada de .Es
+                            decir $$σ_\bar{X}={\over \sqrt{n}}$$</li>
+                            <br>
+                            Si la población fuera finita de tamaño N, se aplica el factor de correción:
+                            $$\sqrt{N-n\over N-1}$$
+                            al error estándar de la media muestral.
+                    </ul>
+  
+                </p>
             </div>
-
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-futbol-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Mobile App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-compass"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Custom App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                      
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-database"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">E-Commerce</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">CMS App</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-paper-plane-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Product Dev</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SharePoint</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+		<div class="col-md-6">
+			 
+		</div>
+        </div>
+    </div>
+</section>
+	
+    <section id="teorema">
+        <div class="container">
+    
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">TEOREMA DEL LIMITE CENTRAL</h2>
                 </div>
-            </div><!--/.row-->    
-        </div><!--/.container-->
-    </section><!--/#services-->
+    
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="images/TLC.jpg" alt="">
+                </div>
+    
+                <div class="col-sm-6 wow fadeInRight">
+                    <p>
+                        De una población infinita con media \(μ\) y varianza \(σ^2\) se extraen
+                        muestras aleatorias de tamaño \(n\), entonces la media muestral
+                        se comporta aproximadamente como una variable aleatoria
+                        normal con media igual a la media poblacional y con varianza
+                        igual a la varianza poblacional dividida por el tamaño de la
+                        muestra, siempre que \(n\) sea grande. Esto es: 
+                    </p>
+                    <p>
+                        $$\bar{X} \sim N(μ, {σ^2\over n})$$
+                        <br>
+                        $$Estandarizado: Z={\bar{X}-μ\over {σ\over \sqrt{n}}}  \sim N(0, 1)$$ 
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section><!--/#about-->
+
+    <section id="proporcion">
+        <div class="container">
+    
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">DISTRIBUCIÓN MUESTRAL DE LAS PROPORCIONES</h2>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="images/proporciones.png" alt="">
+                </div>
+    
+                <div class="col-sm-6 wow fadeInRight">
+                    <p>
+                        Si de una población distribuida Binomialmente con
+                        probabilidad de éxito \(p\) se extrae una muestra aleatoria de
+                        tamaño \(n\), entonces se puede mostrar que la media de \(X\):
+                        número de éxitos en la muestra, es \(μ = np\) y que su varianza es
+                        \(σ^2 = npq\). En consecuencia la proporción muestral \(\bar{X} = {X\over n}\) tiene
+                        media \(p\), y varianza \(pq\over n\) . Entonces: por el Teorema del Limite
+                        Central, cuando \(n\) es grande se tiene:
+                    </p>
+
+                    <p>
+                        $$Z = {X-np\over \sqrt{npq}} = {\bar{p}-p\over \sqrt{pq\over n}}$$
+                    </p>
+                    <p>
+                        Donde:<br>
+                        \(\bar{p}\): Proporción Muestral<br>
+                        \(p\): Proporción Poblacional<br>
+                        \(q\): 1-p<br>
+                        \(n\): Tamaño de muestra
+                    </p>
+                    <p>
+                        Si es una población finita:<br>
+                        $${Z = {\bar{p}-p\over \sqrt{pq\over n}} \sqrt{N-n\over N-1}}$$
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section><!--/#about-->
 
 
-
-   
+    <!--EJEMPLOS-->
     <section id="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Our Works</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <h2 class="section-title wow fadeInDown">EJEMPLOS</h2>
+                <p class="wow fadeInDown">EJEMPLOS DE ALGUNOS EJERCICIOS</p>
             </div>
 
             <div class="text-center">
                 <ul class="portfolio-filter">
-                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
-                    <li><a href="#" data-filter=".designing">Designing</a></li>
-                    <li><a href="#" data-filter=".mobile">Mobile App</a></li>
-                    <li><a href="#" data-filter=".development">Development</a></li>
+                    <li><a class="active" href="#" data-filter="*">TODOS</a></li>
+                    <li><a href="#" data-filter=".designing">MEDIA MUESTRAL</a></li>
+                    <li><a href="#" data-filter=".mobile">TCL</a></li>
+                    <li><a href="#" data-filter=".development">PROPORCIONES</a></li>
                 </ul><!--/#portfolio-filter-->
             </div>
 
             <div class="portfolio-items">
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/TLC1.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>visualizar</h3>
+                            La renta media de los habitantes de un país
+                            se distribuye uniformemente entre 4,0 millones ptas.
+                            y 10,0 millones ptas. Calcular la probabilidad de que
+                            al seleccionar al azar a 100 personas la suma de sus rentas
+                            supere los 725 millones ptas.
+                            <a class="preview" href="images/portfolio/TLC1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+						<h4>TEORIA CENTRAL DEL LIMITE</h4>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/TLC2.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>visualizar</h3>
+                            En una asignatura del colegio la probabilidad de que te
+                            saquen a la pizarra en cada clase es del 10%. A lo largo del
+                            año tienes 100 clases de esa asignatura. ¿Cuál es la probabilidad
+                            de tener que salir a la pizarra más de 15 veces?
+                            <a class="preview" href="images/portfolio/TLC2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+						<h4>TEORIA CENTRAL DEL LIMITE</h4>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/TLC3.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>visualizar</h3>
+                            El 80 % de las bolas contenidas en una urna son de color azul, siendo el 
+                            20 % restante de color rojo. Determinar la probabilidad de que, al efectuar 
+                            tres extracciones sucesivas con reemplazamiento, dos de las bolas extraídas 
+                            sean de color azul y una de color rojo.
+                            <a class="preview" href="images/portfolio/TLC3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+						<h4>TEORIA CENTRAL DEL LIMITE</h4>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/proporcion1.JPG" alt="">
+                        <div class="portfolio-info">
+                            <h3>visualizar</h3>
+                            Una fábrica de pasteles fabrica, en su producción habitual, un 3% de pasteles
+                            defectuosos. Un cliente recibe un pedido de 500 pasteles de la fábrica.
+                            Calcula la probabilidad de que encuentre más del 5% de pasteles defectuosos.
+
+                            <a class="preview" href="images/portfolio/proporcion1.JPG" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+						<h4>PROPORCIÓN</h4>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/proporcion2.JPG" alt="">
+                        <div class="portfolio-info">
+                            <h3>visualizar</h3>
+                            En el juzgado de una ciudad se presentaron el año pasado 8300 denuncias 
+                            y este año ha habido 1100 más. Se van a seleccionar muestras aleatorias formadas 
+                            por un 3 % y un 5 % de ellas, respectivamente.
+                            Si se sabe que el tiempo dedicado el año pasado al trámite de las denuncias 
+                            sigue una distribución normal con media de 8 meses y desviación típica de 3 meses, 
+                            y que este año los parámetros de distribución han aumentado un 4 % cada uno, calcula 
+                            la probabilidad de que la diferencia de tiempo medio invertido en los trámites judiciales 
+                            de las muestras sea menor a 0,2 meses.
+                            
+                            <a class="preview" href="images/portfolio/proporcion2.JPG" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+						<h4>PROPORCIÓN</h4>
+                    </div>
+                </div><!--/.portfolio-item-->
+
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/medias3.JPG" alt="">
                         <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <h3>visualizar</h3>
+                            Sea una población con distribución normal, con media 30 y varianza 
+                            16, si se toman muestras de tamaño n=16, 
+                            a) Determinar la distribución de muestreo de la media e indicar cuáles 
+                            son sus parámetros (media y varianza). 
+                            b) encontrar la probabilidad de que, al sacar una muestra aleatoria, la 
+                            media muestral no difiera de la media poblacional en más de 2.0.
+                            
+                            <a class="preview" href="images/portfolio/medias3.JPG" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-						<h4>Lorem Ipsum</h4>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-						<h4>Lorem Ipsum</h4>
+						<h4>MEDIA MUESTRAL</h4>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/medias1.JPG" alt="">
                         <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <h3>visualizar</h3>
+                            En el último año, el peso de los recién nacidos en una maternidad 
+                            se ha distribuido según una ley normal de media μ = 3100 g y desviación 
+                            típica σ = 150 g.
+                            ¿Cuál será la probabilidad de que la media de una muestra de 100 recién 
+                            nacidos sea superior a 3130 g?
+                            
+                            <a class="preview" href="images/portfolio/medias1.JPG"" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-						<h4>Lorem Ipsum</h4>
+						<h4>MEDIA MUESTRAL</h4>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item mobile">
+                <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <img class="img-responsive" src="images/portfolio/medias2.JPG" alt="">
                         <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <h3>visualizar</h3>
+                            Supongamos que la estatura media de las alumnas de un instituto es de 165 cm, 
+                            con desviación típica de 8 cm.
+                            a) Halla los parámetros de una media muestral de tamaño n = 36.
+                            b) ¿Cuál es la probabilidad de que una muestra de 36 alumnas tenga
+                            una media de 167 cm o más centímetros?
+                            
+                            <a class="preview" href="images/portfolio/medias2.JPG" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
-						<h4>Lorem Ipsum</h4>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-						<h4>Lorem Ipsum</h4>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-						<h4>Lorem Ipsum</h4>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-						<h4>Lorem Ipsum</h4>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-						<h4>Lorem Ipsum</h4>
+						<h4>MEDIA MUESTRAL</h4>
                     </div>
                 </div><!--/.portfolio-item-->
             </div>
         </div><!--/.container-->
     </section><!--/#portfolio-->
 
-   <section id="team">
-<div class="container">
-<div class="section-header">
-                <h2 class="section-title wow fadeInDown">Our Team</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>			
-<div class="row" data-anim-type="fade-in-up">
 
-<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-<div class="team-wrapper">
-<div class="team-inner" style="background-image: url('images/team/01.jpg')">
-<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-</div>
-<div class="description">
-<h3> John Doe</h3>
-<h5> <strong> Founder &amp; CEO </strong></h5>
-<p>
-Pellentesque elementum dapibus convallis.
-Vivamus eget finibus.
-</p>
-</div>
-</div>
-</div>
-<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-<div class="team-wrapper">
-<div class="team-inner" style="background-image: url('images/team/02.jpg')">
-<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-</div>
-<div class="description">
-<h3> Armani Krist</h3>
-<h5> <strong> Manager &amp; Designer </strong></h5>
-<p>
-Pellentesque elementum dapibus convallis.
-Vivamus eget finibus.
-</p>
-</div>
-</div>
-</div>
-<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-<div class="team-wrapper">
-<div class="team-inner" style="background-image: url('images/team/03.jpg')">
-<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-</div>
-<div class="description">
-<h3> Micellir Faeny</h3>
-<h5> <strong> Developer &amp; Designer </strong></h5>
-<p>
-Pellentesque elementum dapibus convallis.
-Vivamus eget finibus.
-</p>
-</div>
-</div>
-</div>
-<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-<div class="team-wrapper">
-<div class="team-inner" style="background-image: url('images/team/04.jpg')">
-<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-</div>
-<div class="description">
-<h3> Kimten Lendy</h3>
-<h5> <strong> Developer &amp; Designer </strong></h5>
-<p>
-Pellentesque elementum dapibus convallis.
-Vivamus eget finibus.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-       <section id="business-stats">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Business Stats</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="business-stats" data-digit="6850" data-duration="1000"></div>
-                        <strong>Clients</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="business-stats" data-digit="1465" data-duration="1000"></div>
-                        <strong>Completed</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="business-stats" data-digit="4325" data-duration="1000"></div>
-                        <strong>In Progress</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="business-stats" data-digit="2568" data-duration="1000"></div>
-                        <strong>Revenue</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#business-stats-->
-
-    <section id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Pricing</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $45
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Basic
-                                </div>
-                            </li>
-                            <li><strong>1</strong> DOMAIN</li>
-                            <li><strong>100GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>10</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $85
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Business
-                                </div>
-                            </li>
-                            <li><strong>5</strong> DOMAIN</li>
-                            <li><strong>500GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>30</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $125
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Professional
-                                </div>
-                            </li>
-                            <li><strong>10</strong> DOMAIN</li>
-                            <li><strong>2GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>50</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $185
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Extended
-                                </div>
-                            </li>
-                            <li><strong>15</strong> DOMAIN</li>
-                            <li><strong>10GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>100</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#pricing-->
-
-    <section class="testimonial-area" id="testimonial">
-			<div class="container">
-				<div class="section-header">
-                <h2 class="section-title wow fadeInDown">Testimonial</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-							<div class="row">
-								<div class="col-xs-12">
-									<blockquote>Sontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-xs-12">
-									<h5>John Bond</h5>
-									<h6>Lorem Ipsuis simply</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-							<div class="row">
-								<div class="col-xs-12">
-									<blockquote>Tontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-xs-12">
-									<h5>John Bond</h5>
-									<h6>Lorem Ipsuis simply</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-							<div class="row">
-								<div class="col-xs-12">
-									<blockquote>Aontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-xs-12">
-									<h5>John Bond</h5>
-									<h6>Lorem Ipsuis simply</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-    <section id="contact-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Contact Us</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-        </div>
-    </section><!--/#contact-us-->
-
-
-    <section id="contact">
+    <section id="team">
         
         <div class="container">
-            <div class="container contact-info">
-                <div class="row">
-				  <div class="col-sm-4 col-md-4">
-                        <div class="contact-form">
-                            <h3>Contact Info</h3>
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">EQUIPO</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>	
 
-                            <address>
-                              <strong>Amazing Company, Inc.</strong><br>
-                              12345 NewYork, Street 125<br>
-                              United States 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-					</div></div>
-                    <div class="col-sm-8 col-md-8">
-                        <div class="contact-form">
-                       
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
+        <div class="row" data-anim-type="fade-in-up">
+        
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="team-wrapper">
+                <div class="team-inner" style="background-image: url('images/team/01.jpg')">
+                    <a href="#" target="_blank"> <i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="description">
+                    <h3> John Doe</h3>
+                    <h5> <strong> Founder &amp; CEO </strong></h5>
+                    <p>
+                    Pellentesque elementum dapibus convallis.
+                    Vivamus eget finibus.
+                    </p>
                 </div>
             </div>
-        </div>   
-   </section><!--/#bottom-->
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="team-wrapper">
+                <div class="team-inner" style="background-image: url('images/team/01.jpg')">
+                    <a href="#" target="_blank"> <i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="description">
+                    <h3> John Doe</h3>
+                    <h5> <strong> Founder &amp; CEO </strong></h5>
+                    <p>
+                    Pellentesque elementum dapibus convallis.
+                    Vivamus eget finibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="team-wrapper">
+                <div class="team-inner" style="background-image: url('images/team/01.jpg')">
+                    <a href="#" target="_blank"> <i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="description">
+                    <h3> John Doe</h3>
+                    <h5> <strong> Founder &amp; CEO </strong></h5>
+                    <p>
+                    Pellentesque elementum dapibus convallis.
+                    Vivamus eget finibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="team-wrapper">
+                <div class="team-inner" style="background-image: url('images/team/01.jpg')">
+                    <a href="#" target="_blank"> <i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="description">
+                    <h3> John Doe</h3>
+                    <h5> <strong> Founder &amp; CEO </strong></h5>
+                    <p>
+                    Pellentesque elementum dapibus convallis.
+                    Vivamus eget finibus.
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
 
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2015 Company Name. Template by <a target="_blank" href="http://webthemez.com/" title="Free Bootstrap Themes and HTML Templates">WebThemez.com</a>
+                    &copy; Copyright <strong>UNSCH 2022</strong>. Todos los derechos reservados
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-phone"></i></a></li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google"></i></a></li>
                     </ul>
                 </div>
             </div>
